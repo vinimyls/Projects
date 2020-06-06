@@ -1,0 +1,40 @@
+<canvas width="600" height="400"></canvas> <!--cria uma tela de 600 x 400 px-->
+
+<script>
+	
+	var screen = document.querySelector('canvas'); //puxa a tela do html para o javascript
+	var brush = screen.getContext('2d'); //cria um brush 2d
+
+	//Céu - Sky
+	brush.fillStyle = 'lightblue'; //pega a cor azul
+	brush.fillRect(0,0,600,400); //desenha um quadrado
+
+	//Chão - Ground
+	brush.fillStyle = 'green'; //pega a cor verde
+	brush.fillRect(0,395,600,5); //desenha um quadrado
+
+	function drawCircle(x, y, radius, color) { //função para desenhar circulos
+		brush.fillStyle = color; //pega a cor
+		brush.beginPath(); //inicia um caminho
+		brush.arc(x, y, radius, 0, 2*3.14); //define o tamanho
+		brush.fill(); //cria o circulo
+	}
+
+	//Flor - Flower
+	drawCircle(300, 200, 30, 'brown'); //desenha circulo marrom
+	drawCircle(300, 150, 20, 'yellow'); //desenha circulo amarelo
+	drawCircle(340,160, 20, '#F2C438'); //desenha circulo amarelo escuro
+	drawCircle(350, 200, 20, 'yellow'); //desenha circulo amarelo
+	drawCircle(340,240, 20, '#F2C438'); //desenha circulo amarelo escuro
+	drawCircle(300, 250, 20, 'yellow'); //desenha circulo amarelo
+	drawCircle(260, 240, 20, '#F2C438'); //desenha circulo amarelo escuro
+	drawCircle(250,200, 20, 'yellow'); //desenha circulo amarelo
+	drawCircle(260,160, 20, '#F2C438'); //desenha circulo amarelo escuro
+
+	//Caule + Folha - Stem + Leaf
+	brush.fillStyle = 'darkgreen'; //pega a cor verde escuro
+	brush.fillRect(297, 270, 6, 130); //desenha um quadrado
+
+	drawCircle(313, 315, 10, 'green'); //desenha circulo verde
+
+</script>
