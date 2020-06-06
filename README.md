@@ -1,2 +1,2 @@
 # Projects
-![](/MyProjects)
+![](/MyProjects.gif)
