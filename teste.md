@@ -28,8 +28,7 @@ Devem ser instalados  em áreas com grande tráfego de pessoas em situações de
 - Modo de disparo: acionamento mecânico
 - LED verde para sinalizar supervisão
 - LED vermelho para sinalizar disparo
-- Temperatura de operação: xxxxxxx
- - Temperatura de operação: 0°C - 85°C
+- Temperatura de operação: 0°C - 85°C
 ## Instalação na central de alarme convencional VR-40LT
 
 # foto
